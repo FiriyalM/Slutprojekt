@@ -9,7 +9,7 @@ body {
     color: white;
     display: -ms-grid;
     display: grid;
-    background-color: #323232;
+    background-color: rgb(59, 59, 59);
     -ms-grid-columns: 20% 70% 10%;
         grid-template-columns: 20% 70% 10%;
     -ms-grid-rows: auto auto auto;
@@ -116,7 +116,7 @@ body {
   }
   
   header ul li:hover {
-    color: #FFC42E;
+    color: #82cac7;
   }
   
   header .sidenav {
@@ -126,12 +126,12 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgb(59, 59, 59);
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     padding-top: 60px;
-    color: #FFC42E;
+    color: #82cac7;
   }
   
   header .sidenav .closebtn {
@@ -193,17 +193,17 @@ body {
   }
   
   .homeMain .infoText div {
-    background-color: #323232;
+    background-color: rgb(59, 59, 59);
     margin: 0;
     padding: 0;
     height: 60px;
   }
   
   .homeMain .infoText div p {
-    background-color: rgba(44, 44, 44, 0);
+    background-color: rgba(59, 59, 59, 0);
     margin-top: 3%;
     text-align: center;
-    color: #FFC42E;
+    color: #82cac7;
   }
   
   .homeMain .infoText p {
@@ -220,7 +220,7 @@ body {
   
   .searchRecipeMain div {
     display: inline-block;
-    background-color: #cacaca;
+    background-color: #d4cbcb;
     margin: 1% 30%  1% 30%;
     cursor: pointer;
     text-align: center;
@@ -237,7 +237,7 @@ body {
     width: 100%;
     color: white;
     text-align: center;
-    background-color: #1d1d1d;
+    background-color: rgb(59, 59, 59);
   }
   
   @media only screen and (min-width: 800px) {
@@ -259,7 +259,7 @@ body {
       grid-row: 1;
     }
     header nav a:hover {
-      color: #FFC42E;
+      color: #82cac7;
     }
     header .sidenav {
       height: auto;
@@ -284,7 +284,7 @@ body {
     }
     .showSelectedRecipe {
       margin: 1% 30% 1% 30%;
-      background-color: #e0e0e0;
+      background-color: #f3f1f1;
       text-align: center;
     }
     .showSelectedRecipe img {
