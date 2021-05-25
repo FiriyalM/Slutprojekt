@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de05059076.js" crossorigin="anonymous"></script>
+    <Script src="/JS/Mainprofile.js" crossorigin="anonymous"></Script>
+    <link rel="stylesheet" href="Style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <a href="Index.html"><img src="/imges/Untitled-2.png" alt="Logo"></a>
+        <div class="divUserInlog">
+            <p id="userName"></p>
+        </div>
+        <i onclick="openNav()">&#9776</i>
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <a class="closebtn" onclick="openNav()">&times</a>
+                <hr>
+                <li><a id="logoutbutton">Loggout</a></li><hr>
+                <li><a href="/HTML_Files/searchedRecipes.html">Search</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </header>
+    <section id="myRecipes"></section>
+    <form id="editAccount" method="POST" onsubmit="return false">
+        <fieldset>
+            <hr>
+            <label for="editUserName">USername</label>
+            <input type="text" name="userName" id="editUserName" disabled>
+            <label for="editEmail">Email adress</label>
+            <input type="email" name="email" id="editEmail">
+            <label for="createAccPassword">Password</label>
+            <input type="password" name="password" id="createAccPassword">
+            <input type="submit" value="Ändra uppgifter" id="changeUserDataButton" class="buttons">
+            <hr>
+        </fieldset>
+    </form>
+    <form id="adminEditAccount" method="POST" onsubmit="return false" >
+        <fieldset>
+            <hr>
+            <label for="searchUser">search user</label>
+            <input type="search" id="searchUserButton" name="searchUserinput"><br>
+            <hr>
+            <label for="createAccUserName">Username</label>
+            <input type="text" name="userName" id="adminEditUserName" disabled>
+            <label for="createAccEmail">Email address </label>
+            <input type="email" name="email" id="adminEditEmail">
+            <label for="createAccPassword">Password</label>
+            <input type="password" name="password" id="adminEditPassword">
+            <input type="button" id="editUserDataButton" value="ändra" class="buttons">
+            <input type="button" id="deleteUserButton" value="tar bort" class="buttons">
+            <hr>
+        </fieldset>
+    </form>
+    <form id="createRecipt" method="POST" onsubmit="return false">
+        <fieldset>
+            <label for="title">title *</label>
+            <input type="text" name="title"><br>
+            <label for="kategoriItems">category *</label>
+            <select id="KategoriItems" name="kategoriItems">
+                <option>Select category</option>
+                <option value="Kött">Meat</option>
+                <option value="Grönt">Vegetarian</option>
+                <option value="Grönt">Deserts</option>
+                <option value="Fisk">Seafood</option>
+            </select><br>
+            <label for="tid">Time *</label>
+            <input type="text" name="tid"><br>
+            <label for="img">Add picture *</label>
+            <input type="file" id="img" accept="image/*"><br>
+            <label for="näringsvärde">nutritional value *</label>
+            <input type="text" name="näringsvärde"><br>
+            <label for="Beskrivning">Description *</label>
+            <input type="text" name="Beskrivning"><br>
+            <label for="ingredienser">Ingredients *</label>
+            <ol type="1" id="ingrediensList"></ol>
+            <button id="addNewIngredens">add ingredients</button>
+            <label for="stegs">Step *</label>
+            <ol type="1" id="stegList"></ol>
+            <button id="addNewSteg">add step</button>
+            <hr>
+            <input type="button" value="lägg till nytt recipt" id="createReciptButton"><br>
+            <input type="button" value="tar bort recept" id="deleteRecipeButton"><br>   
+            <input type="button" value="ändra recept" id="editRecipeButton"><br>
+        </fieldset>
+    </form>
+    <footer>
+        <p>Newrecipe</p>
+    </footer>
+</body>
+</html>
